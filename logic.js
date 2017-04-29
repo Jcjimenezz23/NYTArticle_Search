@@ -15,8 +15,14 @@ function search(){
 		method: "GET"; 
 
 	}).done(function (results){
-		
-	});
+		$("").empty();
+
+		for(var i = 0; i < numberOfResults.length(); i++){
+
+		}
+	}).fail(function(err) {
+  	throw err;
+});
 
 } 
 
