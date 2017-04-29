@@ -18,13 +18,34 @@ function search(){
 		$("").empty();
 
 		for(var i = 0; i < numberOfResults.length(); i++){
-
+			var articleSection = $("<div>");
+			articleSection.addClass("section");
+			articleSection.attr("id", "articleIndex: " + i);
+			$("").append("articleSection");
 		}
 	}).fail(function(err) {
   	throw err;
 });
 
+
 } 
+
+$("").on("click", function(event){
+
+	event.preventDefault();
+
+	searchTerm = $("").val().trim();
+
+	var newURL = URLBase + "&q=" + searchTerm;
+
+
+})
+
+
+
+
+
+
 
 
 
